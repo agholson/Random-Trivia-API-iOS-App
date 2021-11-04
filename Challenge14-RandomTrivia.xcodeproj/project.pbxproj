@@ -11,6 +11,7 @@
 		41C88E5127321C1200707BDC /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41C88E5027321C1200707BDC /* ContentView.swift */; };
 		41C88E5327321C1800707BDC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 41C88E5227321C1800707BDC /* Assets.xcassets */; };
 		41C88E5627321C1800707BDC /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 41C88E5527321C1800707BDC /* Preview Assets.xcassets */; };
+		41C88E65273220B800707BDC /* ContentModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41C88E64273220B800707BDC /* ContentModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +20,8 @@
 		41C88E5027321C1200707BDC /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		41C88E5227321C1800707BDC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		41C88E5527321C1800707BDC /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		41C88E5C27321F5800707BDC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		41C88E64273220B800707BDC /* ContentModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,8 +54,11 @@
 		41C88E4D27321C1200707BDC /* Challenge14-RandomTrivia */ = {
 			isa = PBXGroup;
 			children = (
+				41C88E612732206D00707BDC /* ViewModels */,
+				41C88E602732206600707BDC /* Models */,
+				41C88E5F2732206000707BDC /* Views */,
+				41C88E5C27321F5800707BDC /* Info.plist */,
 				41C88E4E27321C1200707BDC /* Challenge14_RandomTriviaApp.swift */,
-				41C88E5027321C1200707BDC /* ContentView.swift */,
 				41C88E5227321C1800707BDC /* Assets.xcassets */,
 				41C88E5427321C1800707BDC /* Preview Content */,
 			);
@@ -65,6 +71,29 @@
 				41C88E5527321C1800707BDC /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		41C88E5F2732206000707BDC /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		41C88E602732206600707BDC /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				41C88E5027321C1200707BDC /* ContentView.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		41C88E612732206D00707BDC /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				41C88E64273220B800707BDC /* ContentModel.swift */,
+			);
+			path = ViewModels;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,6 +166,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				41C88E65273220B800707BDC /* ContentModel.swift in Sources */,
 				41C88E5127321C1200707BDC /* ContentView.swift in Sources */,
 				41C88E4F27321C1200707BDC /* Challenge14_RandomTriviaApp.swift in Sources */,
 			);
@@ -272,6 +302,7 @@
 				DEVELOPMENT_TEAM = 6DR6N9843T;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Challenge14-RandomTrivia/Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -302,6 +333,7 @@
 				DEVELOPMENT_TEAM = 6DR6N9843T;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Challenge14-RandomTrivia/Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;

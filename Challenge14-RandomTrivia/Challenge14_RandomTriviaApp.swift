@@ -11,7 +11,9 @@ import SwiftUI
 struct Challenge14_RandomTriviaApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+           ContentView()
+                .environmentObject(ContentModel())
+            
         }
     }
 }
